@@ -21,7 +21,7 @@ class _WallHubState extends State<WallHub> {
     await http.get(Uri.parse('https://api.pexels.com/v1/curated?per_page=80'),
         headers: {
           'Authorization':
-              '563492ad6f9170000100000169afb50e3be14f1cbdd15f2493632e3b'
+              'key'
         }).then((value) {
       Map result = jsonDecode(value.body);
 
